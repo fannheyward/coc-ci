@@ -1,0 +1,27 @@
+{
+  "name": "coc-ci",
+  "version": "0.0.0-development",
+  "description": "ci",
+  "author": "Heyward Fann <fannheyward@gmail.com>",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "keywords": [
+    "coc.nvim"
+  ],
+  "engines": {
+    "coc": "^0.0.70"
+  },
+  "scripts": {
+    "clean": "rimraf lib",
+    "watch": "webpack --watch",
+    "build": "webpack",
+    "prepare": "npm-run-all clean build"
+  },
+  "devDependencies": {
+    "@types/node": "^12.11.5",
+    "coc.nvim": "^0.0.74",
+    "segmentit": "^2.0.2",
+    "ts-loader": "^6.2.0",
+    "typescript": "^3.7.2"
+  }
+}
