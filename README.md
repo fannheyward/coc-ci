@@ -2,6 +2,8 @@
 
 支持中文分词的 `w/b` 移动。
 
+![1](https://user-images.githubusercontent.com/345274/76495493-f43de300-6471-11ea-82af-c9d9b0b32008.gif)
+
 ## Install
 
 `:CocInstall coc-ci`
