@@ -1,7 +1,7 @@
 {
   "name": "coc-ci",
-  "version": "0.0.0-development",
-  "description": "ci",
+  "version": "0.1.0",
+  "description": "支持中文分词的 w/b 移动",
   "author": "Heyward Fann <fannheyward@gmail.com>",
   "license": "MIT",
   "main": "lib/index.js",
