@@ -17,7 +17,7 @@ async function move(w = true) {
   const cursor = await nvim.eval('[line("."), col(".")]');
   const col = cursor[1];
 
-  const lineBuf = new Buffer(line);
+  const lineBuf = Buffer.from(line);
   if (col >= lineBuf.length) {
     return fallbackMove(w);
   }
@@ -34,7 +34,7 @@ async function move(w = true) {
     return fallbackMove(w);
   }
 
-  const len = new Buffer(seg.w).length;
+  const len = Buffer.from(seg.w).length;
   await nvim.call('cursor', [cursor[0], w ? col + len : col - len]);
 }
 
